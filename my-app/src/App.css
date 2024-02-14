@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
+section{
+  flex-grow: 1;
+}
+
+header{
+  padding: 40px 0;
+}
+header nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+}
+header nav ul li a{
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(10, 94, 189);
+  transition: .2s;
+}
+header nav ul li a:hover{
+  color: rgb(255, 115, 0);
+}
+
+header nav ul li a.active{
+  background-color: rgb(47, 0, 175);
+  color: rgb(255, 209, 57);
+  border-radius: 2rem;
+  padding: 10px 20px;
+}
